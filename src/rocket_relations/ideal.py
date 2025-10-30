@@ -82,5 +82,5 @@ def cf_calc(gamma, pe_over_po, pa_over_po, ae_over_astar) -> float:
     if not value_error == []:
         raise ValueError(value_error)
 
-    cf = np.sqrt(((2*gamma**2)/(gamma-1))*((2)/(gamma+1))**((gamma+1)/(gamma-1))*(1-pe_over_po**((gamma-1)/gamma)))+(pe_over_po-pa_over_po)*ae_over_astar
+    cf = np.sqrt(((2*gamma**2)/(gamma-1))*(2/(gamma+1))**((gamma+1)/(gamma-1))*(1-pe_over_po**((gamma-1)/gamma)))+(pe_over_po-pa_over_po)*ae_over_astar
     return cf
